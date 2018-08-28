@@ -5,6 +5,7 @@ import {
 } from 'react-router-dom';
 import * as routes from '../constants/routes';
 import { auth } from '../firebase';
+import { SignInLink } from './SignIn'
 
 class SignUpPage extends React.Component {
     render() {
@@ -13,6 +14,9 @@ class SignUpPage extends React.Component {
             <div>
                 <h1>Sign Up</h1>
                 <SignUpForm history={history}/>
+
+                <hr />
+                <SignInLink />
             </div>
         );
     }
